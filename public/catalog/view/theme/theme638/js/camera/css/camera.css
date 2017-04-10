@@ -1,0 +1,366 @@
+/*========================================================
+                        Camera
+=========================================================*/
+@-webkit-keyframes swing {
+  15% {
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+  }
+  50% {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes swing {
+  15% {
+    -webkit-transform: translateY(5px);
+    transform: translateY(5px);
+  }
+  50% {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.camera_container {
+  position: relative;
+  padding-bottom: 45.46%;
+}
+
+@media (max-width: 659.92081px) {
+  .camera_container {
+    padding-bottom: 300px;
+  }
+}
+.fluid_container {
+  margin-bottom: 50px;
+}
+
+.camera_wrap {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  margin-bottom: 0 !important;
+  height: 100%;
+  background: #fff;
+  z-index: 0;
+}
+
+.camera_wrap img {
+  max-width: none !important;
+}
+
+.camera_fakehover {
+  height: 100%;
+  min-height: 60px;
+  position: relative;
+  width: 100%;
+}
+
+.camera_src {
+  display: none;
+}
+
+.cameraCont, .cameraContents {
+  height: 100%;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.cameraContent {
+  display: none;
+}
+
+.camera_target {
+  overflow: hidden;
+  text-align: left;
+  z-index: 0;
+}
+
+.camera_overlayer {
+  overflow: hidden;
+  z-index: 0;
+}
+
+.camera_target_content {
+  overflow: hidden;
+  z-index: 2;
+}
+
+.camera_loader {
+  background: #fff url("data:image/gif;base64,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") no-repeat center;
+  border: 1px solid #ffffff;
+  border-radius: 18px;
+  height: 36px;
+  left: 50%;
+  overflow: hidden;
+  position: absolute;
+  margin: -18px 0 0 -18px;
+  top: 50%;
+  width: 36px;
+  z-index: 3;
+}
+
+.camera_nav_cont {
+  height: 65px;
+  overflow: hidden;
+  position: absolute;
+  right: 9px;
+  top: 15px;
+  width: 120px;
+  z-index: 4;
+}
+
+.camerarelative {
+  overflow: hidden;
+  position: relative;
+}
+
+.imgFake {
+  cursor: pointer;
+}
+
+.camera_command_wrap .hideNav {
+  display: none;
+}
+
+.camera_command_wrap {
+  left: 0;
+  position: relative;
+  right: 0;
+  z-index: 4;
+}
+
+.showIt {
+  display: none;
+}
+
+.camera_clear {
+  clear: both;
+  display: block;
+  height: 1px;
+  margin: -1px 0 25px;
+  position: relative;
+}
+
+.camera_caption {
+  display: none;
+}
+.camera_caption > div {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 0 5%;
+  display: inline-block;
+  margin-top: -29px;
+  color: #fff;
+  font: 400 43px/53px "Vidaloka", serif;
+  text-transform: uppercase;
+}
+.camera_caption > div .title {
+  letter-spacing: 3px;
+}
+.camera_caption > div .title span {
+  font-size: 53px;
+}
+.camera_caption > div .bg-tx {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0.23;
+  font: 400 375px/375px "Vidaloka", serif;
+  margin-top: -150px;
+  letter-spacing: 22px;
+}
+.camera_caption > div .title-middle {
+  margin-top: -50px;
+  font-size: 80px;
+  line-height: 93px;
+}
+.camera_caption > div .title-big {
+  display: inline-block;
+  margin-top: -160px;
+  font-size: 93px;
+  line-height: 93px;
+}
+.camera_caption > div .title-big span {
+  display: inline-block;
+  font-size: 353px;
+  line-height: 353px;
+}
+
+.cameraContent .camera_caption {
+  display: block;
+}
+
+.cameraSlide, .cameraContent, .camera_target, .camera_overlayer, .camera_target_content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+/*================   Custom Layout&Styles   =====================*/
+.camera_prev, .camera_next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 4.2%;
+  margin-top: -19px;
+  width: 38px;
+  height: 38px;
+  z-index: 5;
+  font-size: 38px;
+  line-height: 38px;
+  color: #fff;
+  -moz-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+.camera_prev:hover, .camera_next:hover {
+  color: #01669a;
+}
+
+.camera_prev {
+  left: 4.2%;
+}
+
+/*========================================================
+               Responsive Header styles
+=========================================================*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .camera_caption > div {
+    font-size: 34px;
+    line-height: 42px;
+  }
+  .camera_caption > div .bg-tx {
+    font-size: 300px;
+    line-height: 300px;
+    letter-spacing: 18px;
+    margin-top: -120px;
+  }
+  .camera_caption > div .title-big {
+    font-size: 74px;
+    line-height: 74px;
+    margin-top: -128px;
+  }
+  .camera_caption > div .title-big span {
+    font-size: 226px;
+    line-height: 226px;
+  }
+  .camera_caption > div .title-middle {
+    font-size: 64px;
+    line-height: 74px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .camera_caption > div {
+    font-size: 27px;
+    line-height: 34px;
+  }
+  .camera_caption > div .bg-tx {
+    font-size: 240px;
+    line-height: 240px;
+    letter-spacing: 14px;
+    margin-top: -96px;
+  }
+  .camera_caption > div .title-big {
+    font-size: 59px;
+    line-height: 59px;
+    margin-top: -102px;
+  }
+  .camera_caption > div .title-big span {
+    font-size: 180px;
+    line-height: 180px;
+  }
+  .camera_caption > div .title-middle {
+    font-size: 51px;
+    line-height: 59px;
+  }
+}
+@media (max-width: 767px) {
+  .camera_caption > div {
+    font-size: 19px;
+    line-height: 24px;
+  }
+  .camera_caption > div .title {
+    letter-spacing: 0;
+  }
+  .camera_caption > div .title span {
+    font-size: 41px;
+  }
+  .camera_caption > div .bg-tx {
+    font-size: 168px;
+    line-height: 168px;
+    letter-spacing: 9px;
+    margin-top: -67px;
+  }
+  .camera_caption > div .title-big {
+    font-size: 41px;
+    line-height: 41px;
+    margin-top: -71px;
+  }
+  .camera_caption > div .title-big span {
+    font-size: 126px;
+    line-height: 126px;
+  }
+  .camera_caption > div .title-middle {
+    font-size: 36px;
+    line-height: 41px;
+    margin-top: -25px;
+  }
+}
+@media (max-width: 480px) {
+  .camera_caption > div {
+    font-size: 13px;
+    line-height: 17px;
+    margin-top: -15px;
+  }
+  .camera_caption > div .title span {
+    font-size: 29px;
+  }
+  .camera_caption > div .bg-tx {
+    font-size: 100px;
+    line-height: 100px;
+    letter-spacing: 6px;
+    margin-top: -35px;
+  }
+  .camera_caption > div .title-big {
+    font-size: 29px;
+    line-height: 29px;
+    margin-top: -50px;
+  }
+  .camera_caption > div .title-big span {
+    font-size: 88px;
+    line-height: 88px;
+  }
+  .camera_caption > div .title-middle {
+    font-size: 25px;
+    line-height: 29px;
+    margin-top: -18px;
+  }
+
+  .camera_prev {
+    left: 2%;
+  }
+
+  .camera_next {
+    right: 2%;
+  }
+}

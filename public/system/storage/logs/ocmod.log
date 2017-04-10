@@ -1,0 +1,1850 @@
+2017-04-10 14:55:35 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 34
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+LINE: 92
+LINE: 104
+LINE: 142
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 35
+LINE: 41
+LINE: 47
+FILE: system/library/template/basic.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+----------------------------------------------------------------
+MOD: Export/Import Tool (V2.31) for OpenCart 2.x
+FILE: admin/controller/common/menu.php
+CODE: $data['text_backup'] = $this->language->get('text_backup');
+LINE: 13
+CODE: $data['backup'] = $this->url->link('tool/backup', 'token=' . $this->session->data['token'],
+LINE: 122
+FILE: admin/language/de-DE/common/menu.php
+CODE: $_['text_backup']
+LINE: 17
+FILE: admin/language/en-gb/common/menu.php
+CODE: $_['text_backup']
+LINE: 10
+FILE: admin/language/pt-br/common/menu.php
+CODE: $_['text_backup']
+LINE: 10
+FILE: admin/language/ru-ru/common/menu.php
+CODE: $_['text_backup']
+LINE: 10
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $backup; ?>"><?php echo $text_backup; ?></a></li>
+LINE: 161
+----------------------------------------------------------------
+MOD: Fast Order modification
+----------------------------------------------------------------
+MOD: TemplateMonster Ajax add to cart 
+FILE: catalog/controller/module/featured.php
+CODE: $data['button_cart'] = $this->language->get('button_cart');
+LINE: 15
+CODE: $data['products'][] = array(
+LINE: 98
+CODE: 'href'        => $this->url->link('product/product', 'product_id=' . $product_info['product_id'])
+LINE: 111
+FILE: catalog/controller/module/special.php
+CODE: $data['button_cart'] = $this->language->get('button_cart');
+LINE: 15
+CODE: $data['products'][] = array(
+LINE: 98
+FILE: catalog/controller/module/bestseller.php
+CODE: $data['button_cart'] = $this->language->get('button_cart');
+LINE: 15
+CODE: $data['products'][] = array(
+LINE: 91
+FILE: catalog/controller/module/latest.php
+CODE: $data['button_cart'] = $this->language->get('button_cart');
+LINE: 15
+CODE: $data['products'][] = array(
+LINE: 98
+FILE: catalog/controller/product/category.php
+CODE: $data['button_cart'] = $this->language->get('button_cart');
+LINE: 116
+CODE: $data['products'][] = array(
+LINE: 250
+FILE: catalog/controller/product/manufacturer.php
+CODE: $data['button_cart'] = $this->language->get('button_cart');
+LINE: 161
+CODE: $data['products'][] = array(
+LINE: 247
+FILE: catalog/controller/product/product.php
+CODE: $data['button_cart'] = $this->language->get('button_cart');
+LINE: 259
+CODE: $data['products'][] = array(
+LINE: 477
+FILE: catalog/controller/product/search.php
+CODE: $data['button_cart'] = $this->language->get('button_cart');
+LINE: 156
+CODE: $data['products'][] = array(
+LINE: 284
+FILE: catalog/controller/product/special.php
+CODE: $data['button_cart'] = $this->language->get('button_cart');
+LINE: 84
+CODE: $data['products'][] = array(
+LINE: 169
+CODE: 'href'        => $this->url->link('product/product', 'product_id=' . $result['product_id'])
+LINE: 103
+CODE: 'href'        => $this->url->link('product/product', 'product_id=' . $result['product_id'])
+LINE: 110
+CODE: 'href'        => $this->url->link('product/product', 'product_id=' . $result['product_id'])
+LINE: 110
+CODE: 'href'        => $this->url->link('product/product', 'product_id=' . $result['product_id'])
+LINE: 490
+CODE: 'href'        => $this->url->link('product/product', 'product_id=' . $result['product_id'] . $url)
+LINE: 298
+CODE: 'href'        => $this->url->link('product/product', 'product_id=' . $result['product_id'] . $url)
+LINE: 183
+CODE: 'href'        => $this->url->link('product/product', 'manufacturer_id=' . $result['manufacturer_id'] . '&product_id=' . $result['product_id'] . $url)
+LINE: 261
+CODE: 'href'        => $this->url->link('product/product', 'path=' . $this->request->get['path'] . '&product_id=' . $result['product_id'] . $url)
+LINE: 265
+FILE: catalog/language/en-gb/module/featured.php
+CODE: $_['text_tax']
+LINE: 9
+FILE: catalog/language/en-gb/module/special.php
+CODE: $_['text_tax']
+LINE: 9
+FILE: catalog/language/en-gb/module/bestseller.php
+CODE: $_['text_tax']
+LINE: 9
+FILE: catalog/language/en-gb/module/latest.php
+CODE: $_['text_tax']
+LINE: 9
+FILE: catalog/language/en-gb/product/category.php
+CODE: $_['text_tax']
+LINE: 15
+FILE: catalog/language/en-gb/product/manufacturer.php
+CODE: $_['text_tax']
+LINE: 18
+FILE: catalog/language/en-gb/product/product.php
+CODE: $_['text_tax']
+LINE: 14
+FILE: catalog/language/en-gb/product/search.php
+CODE: $_['text_tax']
+LINE: 20
+FILE: catalog/language/en-gb/product/special.php
+CODE: $_['text_tax']
+LINE: 15
+FILE: catalog/language/de-DE/module/featured.php
+CODE: $_['text_tax']
+LINE: 16
+FILE: catalog/language/de-DE/module/special.php
+CODE: $_['text_tax']
+LINE: 16
+FILE: catalog/language/de-DE/module/bestseller.php
+CODE: $_['text_tax']
+LINE: 16
+FILE: catalog/language/de-DE/module/latest.php
+CODE: $_['text_tax']
+LINE: 16
+FILE: catalog/language/de-DE/product/category.php
+CODE: $_['text_tax']
+LINE: 23
+FILE: catalog/language/de-DE/product/manufacturer.php
+CODE: $_['text_tax']
+LINE: 26
+FILE: catalog/language/de-DE/product/product.php
+CODE: $_['text_tax']
+LINE: 22
+FILE: catalog/language/de-DE/product/search.php
+CODE: $_['text_tax']
+LINE: 28
+FILE: catalog/language/de-DE/product/special.php
+CODE: $_['text_tax']
+LINE: 23
+FILE: catalog/language/ru-ru/module/featured.php
+CODE: $_['text_tax']
+LINE: 9
+FILE: catalog/language/ru-ru/module/special.php
+CODE: $_['text_tax']
+LINE: 9
+FILE: catalog/language/ru-ru/module/bestseller.php
+CODE: $_['text_tax']
+LINE: 9
+FILE: catalog/language/ru-ru/module/latest.php
+CODE: $_['text_tax']
+LINE: 9
+FILE: catalog/language/ru-ru/product/category.php
+CODE: $_['text_tax']
+LINE: 15
+FILE: catalog/language/ru-ru/product/manufacturer.php
+CODE: $_['text_tax']
+LINE: 18
+FILE: catalog/language/ru-ru/product/product.php
+CODE: $_['text_tax']
+LINE: 14
+FILE: catalog/language/ru-ru/product/search.php
+CODE: $_['text_tax']
+LINE: 20
+FILE: catalog/language/ru-ru/product/special.php
+CODE: $_['text_tax']
+LINE: 15
+----------------------------------------------------------------
+MOD: TemplateMonster Blog Catalog
+FILE: catalog/controller/common/footer.php
+CODE: $data['powered']
+LINE: 59
+FILE: catalog/language/en-gb/common/footer.php
+CODE: $_['text_powered']
+LINE: 19
+FILE: catalog/language/de-DE/common/footer.php
+CODE: $_['text_powered']
+LINE: 27
+FILE: catalog/language/ru-ru/common/footer.php
+CODE: $_['text_powered']
+LINE: 19
+----------------------------------------------------------------
+MOD: TemplateMonster Description fo banners
+FILE: catalog/controller/module/banner.php
+CODE: 'title' => $result['title'],
+LINE: 22
+FILE: admin/controller/design/banner.php
+CODE: $data['entry_sort_order'] = $this->language->get('entry_sort_order');
+LINE: 277
+CODE: $data['banner_images'][] = array(
+LINE: 386
+FILE: admin/model/design/banner.php
+CODE: $this->db->escape($banner_image_description['title']) . "'");
+LINE: 14
+LINE: 35
+CODE: $banner_image_description_data[$banner_image_description['language_id']] = array('title' => $banner_image_description['title']);
+LINE: 104
+CODE: 'banner_image_description' => $banner_image_description_data,
+LINE: 111
+FILE: admin/view/template/design/banner_form.tpl
+CODE: <td class="text-left"><?php echo $entry_title; ?></td>
+LINE: 56
+CODE: <td class="text-left" style="width: 30%;"><input type="text" name="banner_image[<?php echo $image_row; ?>][link]
+LINE: 83
+CODE: html += '  <td class="text-left" style="width: 30%;"><input type="text" name="banner_image[' + image_row + '][link]" value="" placeholder="<?php echo $entry_link; ?>" class="form-control" /></td>';
+LINE: 122
+FILE: admin/language/en-gb/design/banner.php
+CODE: $_['entry_
+LINE: 20
+FILE: admin/language/de-DE/design/banner.php
+CODE: $_['entry_
+LINE: 28
+FILE: admin/language/ru-ru/design/banner.php
+CODE: $_['entry_
+LINE: 20
+----------------------------------------------------------------
+MOD: TemplateMonster GTMetrix
+CODE: $data['thumb'] = $this->model_tool_image->resize($category_info['image']
+LINE: 134
+CODE: $data['categories'][] = array(
+LINE: 173
+CODE: 'name' => $result['name'] . ($this->config->get('config_product_count') ? ' (' . $this->model_catalog_product->getTotalProducts($filter_data) . ')' : ''),
+LINE: 177
+----------------------------------------------------------------
+MOD: TemplateMonster Labels
+CODE: $data['text_
+LINE: 102
+CODE: $data['products'] = array();
+LINE: 194
+CODE: $special = $this->currency->format
+LINE: 226
+CODE: $special = false;
+LINE: 231
+CODE: 'special'     => $special,
+LINE: 288
+CODE: if ($result['image']) {
+LINE: 221
+CODE: $data['text_
+LINE: 232
+CODE: $data['products'] = array();
+LINE: 422
+CODE: $special = $this->currency->format
+LINE: 443
+CODE: $special = false;
+LINE: 448
+CODE: 'special'     => $special,
+LINE: 505
+CODE: if ($result['image']) {
+LINE: 438
+CODE: $data['text_
+LINE: 135
+CODE: $data['products'] = array();
+LINE: 214
+CODE: $special = $this->currency->format
+LINE: 250
+CODE: $special = false;
+LINE: 255
+CODE: 'special'     => $special,
+LINE: 312
+CODE: if ($result['image']) {
+LINE: 245
+CODE: $data['text_
+LINE: 71
+CODE: $data['products'] = array();
+LINE: 105
+CODE: $special = $this->currency->format
+LINE: 135
+CODE: $special = false;
+LINE: 140
+CODE: 'special'     => $special,
+LINE: 197
+CODE: if ($result['image']) {
+LINE: 130
+CODE: $data['text_
+LINE: 11
+CODE: $data['products'] = array();
+LINE: 35
+CODE: $special = $this->currency->format
+LINE: 64
+CODE: $special = false;
+LINE: 69
+CODE: 'special'     => $special,
+LINE: 126
+CODE: if ($result['image']) {
+LINE: 59
+CODE: $data['text_
+LINE: 11
+CODE: $data['products'] = array();
+LINE: 35
+CODE: $special = $this->currency->format
+LINE: 64
+CODE: $special = false;
+LINE: 69
+CODE: 'special'     => $special,
+LINE: 126
+CODE: if ($result['image']) {
+LINE: 59
+CODE: $data['text_
+LINE: 11
+CODE: $data['products'] = array();
+LINE: 35
+CODE: $special = $this->currency->format
+LINE: 57
+CODE: $special = false;
+LINE: 62
+CODE: 'special'     => $special,
+LINE: 119
+CODE: if ($result['image']) {
+LINE: 52
+CODE: $data['text_
+LINE: 11
+CODE: $data['products'] = array();
+LINE: 32
+CODE: $special = $this->currency->format
+LINE: 61
+CODE: $special = false;
+LINE: 66
+CODE: 'special'     => $special,
+LINE: 123
+CODE: $products = array_slice($setting['product'], 0, (int)$setting['limit']);
+LINE: 44
+CODE: $product_info = $this->model_catalog_product->getProduct($product_id);
+LINE: 58
+CODE: $data['heading_title'] = $manufacturer_info['name'];
+LINE: 146
+CODE: $data['products'] = array();
+LINE: 181
+CODE: $special = $this->currency->format
+LINE: 212
+CODE: $special = false;
+LINE: 217
+CODE: 'special'     => $special,
+LINE: 274
+CODE: if ($result['image']) {
+LINE: 207
+CODE: $_['text_
+LINE: 6
+CODE: $_['text_
+LINE: 9
+CODE: $_['text_
+LINE: 6
+CODE: $_['text_
+LINE: 10
+CODE: $_['text_
+LINE: 9
+CODE: $_['text_
+LINE: 10
+CODE: $_['text_
+LINE: 10
+CODE: $_['text_
+LINE: 10
+CODE: $_['text_
+LINE: 10
+CODE: $_['text_
+LINE: 14
+CODE: $_['text_
+LINE: 17
+CODE: $_['text_
+LINE: 14
+CODE: $_['text_
+LINE: 18
+CODE: $_['text_
+LINE: 17
+CODE: $_['text_
+LINE: 17
+CODE: $_['text_
+LINE: 17
+CODE: $_['text_
+LINE: 17
+CODE: $_['text_
+LINE: 17
+CODE: $_['text_
+LINE: 6
+CODE: $_['text_
+LINE: 9
+CODE: $_['text_
+LINE: 6
+CODE: $_['text_
+LINE: 10
+CODE: $_['text_
+LINE: 9
+CODE: $_['text_
+LINE: 10
+CODE: $_['text_
+LINE: 10
+CODE: $_['text_
+LINE: 10
+CODE: $_['text_
+LINE: 10
+FILE: admin/view/template/setting/setting.tpl
+CODE: <legend><?php echo $text_product; ?></legend>
+LINE: 394
+CODE: <?php echo $footer; ?>
+LINE: 1580
+FILE: admin/controller/setting/setting.php
+CODE: if (isset($this->request->post['config_name'])) {
+LINE: 464
+CODE: if (isset($this->error['name'])) {
+LINE: 237
+CODE: if (!$this->user->hasPermission('modify', 'setting/setting')) {
+LINE: 1161
+CODE: $data['entry_status']
+LINE: 153
+CODE: $data['help_compression'] = $this->language->get('help_compression');
+LINE: 221
+FILE: admin/language/en-gb/setting/setting.php
+CODE: $_['entry_status']
+LINE: 130
+CODE: $_['help_compression']
+LINE: 198
+CODE: $_['entry_error_
+LINE: 124
+----------------------------------------------------------------
+MOD: TemplateMonster Lazy load
+CODE: 'thumb'       => $image,
+LINE: 135
+CODE: 'thumb'       => $image,
+LINE: 126
+CODE: 'thumb'       => $image,
+LINE: 133
+CODE: 'thumb'       => $image,
+LINE: 133
+CODE: 'thumb'       => $image,
+LINE: 295
+CODE: 'thumb'       => $image,
+LINE: 281
+CODE: 'thumb'       => $image,
+LINE: 512
+CODE: 'thumb'       => $image,
+LINE: 319
+CODE: 'thumb'       => $image,
+LINE: 204
+----------------------------------------------------------------
+MOD: TemplateMonster NewsLetter
+FILE: admin/controller/marketing/contact.php
+CODE: $this->load->model('sale/order');
+LINE: 110
+CODE: $results = $this->model_customer_customer->getCustomers($customer_data);
+LINE: 138
+LINE: 158
+LINE: 179
+FILE: catalog/controller/account/register.php
+CODE: $this->load->model('account/customer');
+LINE: 20
+CODE: $this->customer->login($this->request->post['email'], $this->request->post['password']);
+LINE: 31
+----------------------------------------------------------------
+MOD: TemplateMonster Product
+FILE: system/library/document.php
+CODE: private $scripts = array();
+LINE: 21
+FILE: catalog/controller/common/header.php
+CODE: $data['scripts'] = $this->document->getScripts();
+LINE: 36
+CODE: $data['description'] = html_entity_decode($product_info['description'], ENT_QUOTES, 'UTF-8');
+LINE: 281
+CODE: $data['popup'] = $this->model_tool_image->resize
+LINE: 317
+CODE: $data['tab_attribute'] = $this->language->get('tab_attribute');
+LINE: 275
+CODE: $data['points'] = $product_info['points'];
+LINE: 286
+CODE: $data['images'] = array();
+LINE: 350
+CODE: 'thumb' => $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_additional_width'), $this->config->get($this->config->get('config_theme') . '_image_additional_height'))
+LINE: 357
+CODE: $data['breadcrumbs'] = array();
+LINE: 10
+CODE: $this->document->addScript('catalog/view/javascript/jquery/magnific/jquery.magnific-popup.min.js');
+LINE: 223
+CODE: $this->document->addStyle('catalog/view/javascript/jquery/magnific/magnific-popup.css');
+LINE: 224
+CODE: $this->document->addScript('catalog/view/javascript/jquery/datetimepicker/moment.js');
+LINE: 225
+CODE: $this->document->addScript('catalog/view/javascript/jquery/datetimepicker/bootstrap-datetimepicker.min.js');
+LINE: 226
+CODE: $this->document->addStyle('catalog/view/javascript/jquery/datetimepicker/bootstrap-datetimepicker.min.css');
+LINE: 227
+CODE: $_['tab_review']
+LINE: 55
+CODE: $_['tab_review']
+LINE: 65
+CODE: $_['tab_review']
+LINE: 56
+----------------------------------------------------------------
+MOD: TemplateMonster QuickView
+CODE: public function index($setting) {
+LINE: 5
+CODE: return $this->load->view('module/
+LINE: 157
+CODE: $data['button_cart'] = $this->language->get('button_cart');
+LINE: 21
+CODE: public function index($setting) {
+LINE: 5
+CODE: return $this->load->view('module/
+LINE: 150
+CODE: $data['button_cart'] = $this->language->get('button_cart');
+LINE: 21
+CODE: public function index($setting) {
+LINE: 5
+CODE: return $this->load->view('module/
+LINE: 157
+CODE: $data['button_cart'] = $this->language->get('button_cart');
+LINE: 21
+CODE: public function index($setting) {
+LINE: 5
+CODE: return $this->load->view('module/
+LINE: 163
+CODE: $data['button_cart'] = $this->language->get('button_cart');
+LINE: 21
+CODE: $data['products'][] = array(
+LINE: 146
+CODE: 'rating'      => $rating,
+LINE: 168
+CODE: $data['products'][] = array(
+LINE: 139
+CODE: 'rating'      => $rating,
+LINE: 161
+CODE: $data['products'][] = array(
+LINE: 146
+CODE: 'rating'      => $rating,
+LINE: 168
+CODE: $data['products'][] = array(
+LINE: 148
+CODE: 'rating'      => $rating,
+LINE: 170
+CODE: $data['button_cart'] = $this->language->get('button_cart');
+LINE: 117
+CODE: $data['button_cart'] = $this->language->get('button_cart');
+LINE: 162
+CODE: $data['button_cart'] = $this->language->get('button_cart');
+LINE: 157
+CODE: $data['button_cart'] = $this->language->get('button_cart');
+LINE: 85
+CODE: $data['button_cart'] = $this->language->get('button_cart');
+LINE: 263
+CODE: $data['products'][] = array(
+LINE: 303
+CODE: 'rating'      => $result['rating'],
+LINE: 326
+CODE: $data['products'][] = array(
+LINE: 289
+CODE: 'rating'      => $result['rating'],
+LINE: 312
+CODE: $data['products'][] = array(
+LINE: 327
+CODE: 'rating'      => $result['rating'],
+LINE: 350
+CODE: $data['products'][] = array(
+LINE: 212
+CODE: 'rating'      => $result['rating'],
+LINE: 235
+CODE: $data['products'][] = array(
+LINE: 571
+CODE: 'rating'      => $rating,
+LINE: 594
+CODE: $_['heading_title']
+LINE: 7
+CODE: $_['heading_title']
+LINE: 7
+CODE: $_['heading_title']
+LINE: 7
+CODE: $_['heading_title']
+LINE: 7
+CODE: $_['text_
+LINE: 5
+CODE: $_['text_
+LINE: 8
+CODE: $_['text_
+LINE: 9
+CODE: $_['text_
+LINE: 8
+CODE: $_['text_
+LINE: 5
+CODE: $_['text_tax']
+LINE: 18
+CODE: $_['text_tax']
+LINE: 18
+CODE: $_['text_tax']
+LINE: 18
+CODE: $_['text_tax']
+LINE: 18
+CODE: $_['text_
+LINE: 5
+CODE: $_['text_
+LINE: 8
+CODE: $_['text_
+LINE: 9
+CODE: $_['text_
+LINE: 8
+CODE: $_['text_
+LINE: 5
+CODE: $_['text_tax']
+LINE: 25
+CODE: $_['text_tax']
+LINE: 25
+CODE: $_['text_tax']
+LINE: 25
+CODE: $_['text_tax']
+LINE: 25
+CODE: $_['text_
+LINE: 13
+CODE: $_['text_
+LINE: 16
+CODE: $_['text_
+LINE: 17
+CODE: $_['text_
+LINE: 16
+CODE: $_['text_
+LINE: 13
+----------------------------------------------------------------
+MOD: TemplateMonster Simple Blog Admin
+CODE: $data['text_openbay_order_import']
+LINE: 119
+CODE: $data['openbay_link_amazonus_links']
+LINE: 224
+CODE: $data['entry_status'] = $this->language->get('entry_status');
+LINE: 162
+CODE: $data['text_error'] = $this->language->get('text_error');
+LINE: 57
+CODE: $data['help_compression'] = $this->language->get('help_compression');
+LINE: 238
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 1223
+CODE: <li id="reports">
+LINE: 180
+CODE: <li><a href="#tab-server" data-toggle="tab"><?php echo $tab_server; ?></a></li>
+LINE: 43
+CODE: </form>
+LINE: 1604
+CODE: $_['text_paypal_search']
+LINE: 109
+CODE: $_['text_paypal_search']
+LINE: 62
+LINE: 126
+CODE: $_['text_paypal_search']
+LINE: 54
+LINE: 119
+CODE: $_['text_error']                      = 'Error Handling';
+LINE: 32
+CODE: $_['entry_status']                    = 'Status';
+LINE: 151
+----------------------------------------------------------------
+MOD: TemplateMonster Theme Path
+CODE: $this->load->language('common/
+LINE: 51
+CODE: $this->load->language('common/
+LINE: 6
+----------------------------------------------------------------
+MOD: TM Footer
+CODE: $data['text_newsletter'] = $this->language->get('text_newsletter');
+LINE: 33
+CODE: $data['newsletter'] = $this->url->link('account/newsletter', '', true);
+LINE: 64
+CODE: $data['contact'] = $this->url->link('information/contact');
+LINE: 62
+CODE: $data['powered'] = sprintf($this->language->get('text_powered'), $this->config->get('config_name'), date('Y', time()));
+NOT FOUND!
+CODE: $data['newsletter'] = $this->url->link('account/newsletter', '', true);
+LINE: 75
+CODE: $_['text_information']
+LINE: 3
+CODE: 'Powered By <a href="http://www.opencart.com">OpenCart</a><br /> %s &copy; %s'
+LINE: 17
+CODE: $_['text_information']
+LINE: 11
+CODE: 'Powered By <a href="http://www.opencart.com" target="_blank" title="OpenCart">OpenCart</a>  %s &copy; %s</span>'
+NOT FOUND!
+CODE: $_['text_information']
+LINE: 3
+CODE: 'Работает на <a href="http://opencart-russia.ru">OpenCart</a><br /> %s &copy; %s'
+NOT FOUND!
+----------------------------------------------------------------
+MOD: TM Header
+CODE: $data['name'] = $this->config->get('config_name');
+LINE: 43
+CODE: $data['text_all'] = $this->language->get('text_all');
+LINE: 99
+CODE: $data['telephone'] = $this->config->get('config_telephone');
+LINE: 129
+CODE: $this->load->language('common/header');
+LINE: 64
+CODE: $data['cart'] = $this->load->controller('common/cart');
+LINE: 189
+FILE: catalog/language/en-gb/common/header.php
+CODE: $_['text_checkout']      = 'Checkout';
+LINE: 31
+CODE: 'Wish List (%s)'
+LINE: 3
+FILE: catalog/language/de-DE/common/header.php
+CODE: $_['text_checkout']   = 'Kasse';
+NOT FOUND!
+FILE: catalog/language/ru-ru/common/header.php
+CODE: $_['text_checkout']      = 'Оформление заказа';
+LINE: 16
+CODE: 'Закладки (%s)'
+LINE: 3
+FILE: catalog/language/en-gb/account/wishlist.php
+CODE: 'Wish List (%s)'
+LINE: 7
+FILE: catalog/language/de-DE/account/wishlist.php
+CODE: 'Wunschliste (%s)'
+LINE: 15
+FILE: catalog/language/ru-ru/account/wishlist.php
+CODE: 'Закладки (%s)'
+LINE: 7
+----------------------------------------------------------------
+MOD: TM Header Cart
+FILE: catalog/controller/common/cart.php
+CODE: $data['text_loading'] = $this->language->get('text_loading');
+LINE: 58
+FILE: catalog/controller/checkout/cart.php
+CODE: $json['total'] = sprintf($this->language->get('text_items'), $this->cart->countProducts() + (isset($this->session->data['vouchers']) ? count($this->session->data['vouchers']) : 0), $this->currency->format($total, $this->session->data['currency']));
+LINE: 400
+LINE: 500
+FILE: catalog/language/en-gb/common/cart.php
+CODE: $_['text_items']
+LINE: 6
+FILE: catalog/language/en-gb/checkout/cart.php
+CODE: $_['text_items']
+LINE: 12
+FILE: catalog/language/de-DE/common/cart.php
+CODE: $_['text_recurring']
+LINE: 17
+FILE: catalog/language/de-DE/checkout/cart.php
+CODE: $_['text_recurring']
+LINE: 30
+FILE: catalog/language/ru-ru/common/cart.php
+CODE: $_['text_recurring']
+LINE: 9
+FILE: catalog/language/ru-ru/checkout/cart.php
+CODE: $_['text_recurring']
+LINE: 22
+----------------------------------------------------------------
+MOD: TM Live search
+CODE: class ControllerProductSearch extends Controller {
+LINE: 52
+----------------------------------------------------------------
+MOD: TM Pages Lang
+FILE: catalog/language/en-gb/information/sitemap.php
+CODE: $_['text_contact']     = 'Contact Us';
+LINE: 20
+FILE: catalog/controller/information/sitemap.php
+CODE: $data['text_contact'] = $this->language->get('text_contact');
+LINE: 36
+FILE: catalog/controller/product/compare.php
+CODE: $json['success'] = sprintf($this->language->get('text_success'), $this->url->link('product/product', 'product_id=' . $this->request->post['product_id']), $product_info['name'], $this->url->link('product/compare'));
+LINE: 186
+CODE: $this->session->data['compare'][] = $this->request->post['product_id'];
+LINE: 188
+CODE: array_shift($this->session->data['compare']);
+LINE: 183
+CODE: $json['total'] = sprintf($this->language->get('text_compare'), (isset($this->session->data['compare']) ? count($this->session->data['compare']) : 0));
+LINE: 195
+FILE: catalog/language/en-gb/product/compare.php
+CODE: $_['text_reviews']      = 'Based on %s reviews.';
+LINE: 14
+CODE: $_['text_summary']      = 'Summary';
+LINE: 21
+FILE: catalog/language/ru-ru/product/compare.php
+CODE: $_['text_reviews']      = 'Всего отзывов: %s';
+LINE: 14
+CODE: $_['text_summary']      = 'Краткое описание';
+LINE: 21
+FILE: catalog/language/de-DE/product/compare.php
+CODE: $_['text_summary']    = 'Zusammenfassung';
+NOT FOUND!
+FILE: system/library/pagination.php
+CODE: public $num_links = 8;
+LINE: 5
+----------------------------------------------------------------
+MOD: TM Parallax 
+FILE: catalog/model/extension/module.php
+CODE: public function getModule($module_id) {
+LINE: 12
+----------------------------------------------------------------
+MOD: TM Positions on Home page
+FILE: catalog/controller/common/home.php
+CODE: $data['content_top'] = $this->load->controller('common/content_top');
+LINE: 17
+FILE: admin/view/template/design/layout_form.tpl
+CODE: <?php if ($layout_module['position'] == 'content_top') { ?>
+LINE: 129
+CODE: html += '    <option value="content_top"><?php echo $text_content_top; ?></option>';
+LINE: 211
+FILE: admin/controller/design/layout.php
+CODE: $data['text_content_top'] = $this->language->get('text_content_top');
+LINE: 271
+FILE: admin/language/en-gb/design/layout.php
+CODE: $_['text_content_top']    = 'Content Top';
+LINE: 16
+CODE: $data['text_information'] = $this->language->get('text_information');
+LINE: 13
+CODE: $data['newsletter'] = $this->url->link('account/newsletter', '', true);
+LINE: 78
+CODE: $data['base'] = $server;
+LINE: 31
+----------------------------------------------------------------
+MOD: TM Stickers
+CODE: $data['heading_title']
+LINE: 11
+CODE: $data['products'] = array();
+LINE: 53
+CODE: 'tax'         => $tax,
+LINE: 184
+CODE: $_['text_tax']      = 'Ex Tax:';
+LINE: 22
+CODE: $_['text_tax']
+LINE: 24
+CODE: $_['text_tax']
+LINE: 22
+CODE: $data['button_continue']
+LINE: 131
+LINE: 534
+CODE: $data['products'] = array();
+LINE: 217
+CODE: 'tax'         => $tax,
+LINE: 339
+CODE: $_['text_limit']
+LINE: 38
+CODE: $_['text_limit']
+LINE: 47
+CODE: $_['text_limit']
+LINE: 39
+CODE: $data['button_cart']
+LINE: 87
+CODE: $data['products'] = array();
+LINE: 128
+CODE: 'tax'         => $tax,
+LINE: 248
+CODE: $_['text_limit']
+LINE: 38
+CODE: $_['text_limit']
+LINE: 47
+CODE: $_['text_limit']
+LINE: 39
+CODE: $data['button_cart']
+LINE: 210
+CODE: $data['products'] = array();
+LINE: 288
+CODE: 'tax'         => $tax,
+LINE: 414
+CODE: $_['text_limit']
+LINE: 44
+CODE: $_['text_limit']
+LINE: 53
+CODE: $_['text_limit']
+LINE: 45
+CODE: $data['button_cart']
+LINE: 164
+CODE: $data['products'] = array();
+LINE: 204
+CODE: 'tax'         => $tax,
+LINE: 325
+CODE: $_['text_limit']
+LINE: 41
+CODE: $_['text_limit']
+LINE: 50
+CODE: $_['text_limit']
+LINE: 42
+CODE: $data['heading_title']
+LINE: 11
+CODE: $data['products'] = array();
+LINE: 61
+CODE: 'tax'         => $tax,
+LINE: 182
+CODE: $_['text_tax']      = 'Ex Tax:';
+LINE: 22
+CODE: $_['text_tax']
+LINE: 24
+CODE: $_['text_tax']
+LINE: 22
+CODE: $data['heading_title']
+LINE: 11
+CODE: $data['products'] = array();
+LINE: 61
+CODE: 'tax'         => $tax,
+LINE: 175
+CODE: $_['text_tax']      = 'Ex Tax:';
+LINE: 22
+CODE: $_['text_tax']
+LINE: 24
+CODE: $_['text_tax']
+LINE: 22
+CODE: $data['heading_title']
+LINE: 11
+CODE: $data['products'] = array();
+LINE: 61
+CODE: 'tax'         => $tax,
+LINE: 182
+CODE: $_['text_tax']      = 'Ex Tax:';
+LINE: 22
+CODE: $_['text_tax']
+LINE: 24
+CODE: $_['text_tax']
+LINE: 22
+----------------------------------------------------------------
+MOD: TM Top Menu All Levels
+CODE: $data['language'] = $this->load->controller('common/language');
+LINE: 189
+----------------------------------------------------------------
+2017-04-10 16:05:27 - MOD: Modification Default
+FILE: system/engine/action.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 34
+FILE: system/engine/loader.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 41
+LINE: 92
+LINE: 104
+LINE: 142
+FILE: system/library/config.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 23
+FILE: system/library/language.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 35
+LINE: 41
+LINE: 47
+FILE: system/library/template/basic.php
+REGEX: ~(require|include)(_once)?\(([^)]+)~
+LINE: 18
+----------------------------------------------------------------
+MOD: Export/Import Tool (V2.31) for OpenCart 2.x
+FILE: admin/controller/common/menu.php
+CODE: $data['text_backup'] = $this->language->get('text_backup');
+LINE: 13
+CODE: $data['backup'] = $this->url->link('tool/backup', 'token=' . $this->session->data['token'],
+LINE: 122
+FILE: admin/language/de-DE/common/menu.php
+CODE: $_['text_backup']
+LINE: 17
+FILE: admin/language/en-gb/common/menu.php
+CODE: $_['text_backup']
+LINE: 10
+FILE: admin/language/pt-br/common/menu.php
+CODE: $_['text_backup']
+LINE: 10
+FILE: admin/language/ru-ru/common/menu.php
+CODE: $_['text_backup']
+LINE: 10
+FILE: admin/view/template/common/menu.tpl
+CODE: <li><a href="<?php echo $backup; ?>"><?php echo $text_backup; ?></a></li>
+LINE: 161
+----------------------------------------------------------------
+MOD: Fast Order modification
+----------------------------------------------------------------
+MOD: TemplateMonster Ajax add to cart 
+FILE: catalog/controller/module/featured.php
+CODE: $data['button_cart'] = $this->language->get('button_cart');
+LINE: 15
+CODE: $data['products'][] = array(
+LINE: 98
+CODE: 'href'        => $this->url->link('product/product', 'product_id=' . $product_info['product_id'])
+LINE: 111
+FILE: catalog/controller/module/special.php
+CODE: $data['button_cart'] = $this->language->get('button_cart');
+LINE: 15
+CODE: $data['products'][] = array(
+LINE: 98
+FILE: catalog/controller/module/bestseller.php
+CODE: $data['button_cart'] = $this->language->get('button_cart');
+LINE: 15
+CODE: $data['products'][] = array(
+LINE: 91
+FILE: catalog/controller/module/latest.php
+CODE: $data['button_cart'] = $this->language->get('button_cart');
+LINE: 15
+CODE: $data['products'][] = array(
+LINE: 98
+FILE: catalog/controller/product/category.php
+CODE: $data['button_cart'] = $this->language->get('button_cart');
+LINE: 116
+CODE: $data['products'][] = array(
+LINE: 250
+FILE: catalog/controller/product/manufacturer.php
+CODE: $data['button_cart'] = $this->language->get('button_cart');
+LINE: 161
+CODE: $data['products'][] = array(
+LINE: 247
+FILE: catalog/controller/product/product.php
+CODE: $data['button_cart'] = $this->language->get('button_cart');
+LINE: 259
+CODE: $data['products'][] = array(
+LINE: 477
+FILE: catalog/controller/product/search.php
+CODE: $data['button_cart'] = $this->language->get('button_cart');
+LINE: 156
+CODE: $data['products'][] = array(
+LINE: 284
+FILE: catalog/controller/product/special.php
+CODE: $data['button_cart'] = $this->language->get('button_cart');
+LINE: 84
+CODE: $data['products'][] = array(
+LINE: 169
+CODE: 'href'        => $this->url->link('product/product', 'product_id=' . $result['product_id'])
+LINE: 103
+CODE: 'href'        => $this->url->link('product/product', 'product_id=' . $result['product_id'])
+LINE: 110
+CODE: 'href'        => $this->url->link('product/product', 'product_id=' . $result['product_id'])
+LINE: 110
+CODE: 'href'        => $this->url->link('product/product', 'product_id=' . $result['product_id'])
+LINE: 490
+CODE: 'href'        => $this->url->link('product/product', 'product_id=' . $result['product_id'] . $url)
+LINE: 298
+CODE: 'href'        => $this->url->link('product/product', 'product_id=' . $result['product_id'] . $url)
+LINE: 183
+CODE: 'href'        => $this->url->link('product/product', 'manufacturer_id=' . $result['manufacturer_id'] . '&product_id=' . $result['product_id'] . $url)
+LINE: 261
+CODE: 'href'        => $this->url->link('product/product', 'path=' . $this->request->get['path'] . '&product_id=' . $result['product_id'] . $url)
+LINE: 265
+FILE: catalog/language/en-gb/module/featured.php
+CODE: $_['text_tax']
+LINE: 9
+FILE: catalog/language/en-gb/module/special.php
+CODE: $_['text_tax']
+LINE: 9
+FILE: catalog/language/en-gb/module/bestseller.php
+CODE: $_['text_tax']
+LINE: 9
+FILE: catalog/language/en-gb/module/latest.php
+CODE: $_['text_tax']
+LINE: 9
+FILE: catalog/language/en-gb/product/category.php
+CODE: $_['text_tax']
+LINE: 15
+FILE: catalog/language/en-gb/product/manufacturer.php
+CODE: $_['text_tax']
+LINE: 18
+FILE: catalog/language/en-gb/product/product.php
+CODE: $_['text_tax']
+LINE: 14
+FILE: catalog/language/en-gb/product/search.php
+CODE: $_['text_tax']
+LINE: 20
+FILE: catalog/language/en-gb/product/special.php
+CODE: $_['text_tax']
+LINE: 15
+FILE: catalog/language/de-DE/module/featured.php
+CODE: $_['text_tax']
+LINE: 16
+FILE: catalog/language/de-DE/module/special.php
+CODE: $_['text_tax']
+LINE: 16
+FILE: catalog/language/de-DE/module/bestseller.php
+CODE: $_['text_tax']
+LINE: 16
+FILE: catalog/language/de-DE/module/latest.php
+CODE: $_['text_tax']
+LINE: 16
+FILE: catalog/language/de-DE/product/category.php
+CODE: $_['text_tax']
+LINE: 23
+FILE: catalog/language/de-DE/product/manufacturer.php
+CODE: $_['text_tax']
+LINE: 26
+FILE: catalog/language/de-DE/product/product.php
+CODE: $_['text_tax']
+LINE: 22
+FILE: catalog/language/de-DE/product/search.php
+CODE: $_['text_tax']
+LINE: 28
+FILE: catalog/language/de-DE/product/special.php
+CODE: $_['text_tax']
+LINE: 23
+FILE: catalog/language/ru-ru/module/featured.php
+CODE: $_['text_tax']
+LINE: 9
+FILE: catalog/language/ru-ru/module/special.php
+CODE: $_['text_tax']
+LINE: 9
+FILE: catalog/language/ru-ru/module/bestseller.php
+CODE: $_['text_tax']
+LINE: 9
+FILE: catalog/language/ru-ru/module/latest.php
+CODE: $_['text_tax']
+LINE: 9
+FILE: catalog/language/ru-ru/product/category.php
+CODE: $_['text_tax']
+LINE: 15
+FILE: catalog/language/ru-ru/product/manufacturer.php
+CODE: $_['text_tax']
+LINE: 18
+FILE: catalog/language/ru-ru/product/product.php
+CODE: $_['text_tax']
+LINE: 14
+FILE: catalog/language/ru-ru/product/search.php
+CODE: $_['text_tax']
+LINE: 20
+FILE: catalog/language/ru-ru/product/special.php
+CODE: $_['text_tax']
+LINE: 15
+----------------------------------------------------------------
+MOD: TemplateMonster Blog Catalog
+FILE: catalog/controller/common/footer.php
+CODE: $data['powered']
+LINE: 59
+FILE: catalog/language/en-gb/common/footer.php
+CODE: $_['text_powered']
+LINE: 19
+FILE: catalog/language/de-DE/common/footer.php
+CODE: $_['text_powered']
+LINE: 27
+FILE: catalog/language/ru-ru/common/footer.php
+CODE: $_['text_powered']
+LINE: 19
+----------------------------------------------------------------
+MOD: TemplateMonster Description fo banners
+FILE: catalog/controller/module/banner.php
+CODE: 'title' => $result['title'],
+LINE: 22
+FILE: admin/controller/design/banner.php
+CODE: $data['entry_sort_order'] = $this->language->get('entry_sort_order');
+LINE: 277
+CODE: $data['banner_images'][] = array(
+LINE: 386
+FILE: admin/model/design/banner.php
+CODE: $this->db->escape($banner_image_description['title']) . "'");
+LINE: 14
+LINE: 35
+CODE: $banner_image_description_data[$banner_image_description['language_id']] = array('title' => $banner_image_description['title']);
+LINE: 104
+CODE: 'banner_image_description' => $banner_image_description_data,
+LINE: 111
+FILE: admin/view/template/design/banner_form.tpl
+CODE: <td class="text-left"><?php echo $entry_title; ?></td>
+LINE: 56
+CODE: <td class="text-left" style="width: 30%;"><input type="text" name="banner_image[<?php echo $image_row; ?>][link]
+LINE: 83
+CODE: html += '  <td class="text-left" style="width: 30%;"><input type="text" name="banner_image[' + image_row + '][link]" value="" placeholder="<?php echo $entry_link; ?>" class="form-control" /></td>';
+LINE: 122
+FILE: admin/language/en-gb/design/banner.php
+CODE: $_['entry_
+LINE: 20
+FILE: admin/language/de-DE/design/banner.php
+CODE: $_['entry_
+LINE: 28
+FILE: admin/language/ru-ru/design/banner.php
+CODE: $_['entry_
+LINE: 20
+----------------------------------------------------------------
+MOD: TemplateMonster GTMetrix
+CODE: $data['thumb'] = $this->model_tool_image->resize($category_info['image']
+LINE: 134
+CODE: $data['categories'][] = array(
+LINE: 173
+CODE: 'name' => $result['name'] . ($this->config->get('config_product_count') ? ' (' . $this->model_catalog_product->getTotalProducts($filter_data) . ')' : ''),
+LINE: 177
+----------------------------------------------------------------
+MOD: TemplateMonster Labels
+CODE: $data['text_
+LINE: 102
+CODE: $data['products'] = array();
+LINE: 194
+CODE: $special = $this->currency->format
+LINE: 226
+CODE: $special = false;
+LINE: 231
+CODE: 'special'     => $special,
+LINE: 288
+CODE: if ($result['image']) {
+LINE: 221
+CODE: $data['text_
+LINE: 232
+CODE: $data['products'] = array();
+LINE: 422
+CODE: $special = $this->currency->format
+LINE: 443
+CODE: $special = false;
+LINE: 448
+CODE: 'special'     => $special,
+LINE: 505
+CODE: if ($result['image']) {
+LINE: 438
+CODE: $data['text_
+LINE: 135
+CODE: $data['products'] = array();
+LINE: 214
+CODE: $special = $this->currency->format
+LINE: 250
+CODE: $special = false;
+LINE: 255
+CODE: 'special'     => $special,
+LINE: 312
+CODE: if ($result['image']) {
+LINE: 245
+CODE: $data['text_
+LINE: 71
+CODE: $data['products'] = array();
+LINE: 105
+CODE: $special = $this->currency->format
+LINE: 135
+CODE: $special = false;
+LINE: 140
+CODE: 'special'     => $special,
+LINE: 197
+CODE: if ($result['image']) {
+LINE: 130
+CODE: $data['text_
+LINE: 11
+CODE: $data['products'] = array();
+LINE: 35
+CODE: $special = $this->currency->format
+LINE: 64
+CODE: $special = false;
+LINE: 69
+CODE: 'special'     => $special,
+LINE: 126
+CODE: if ($result['image']) {
+LINE: 59
+CODE: $data['text_
+LINE: 11
+CODE: $data['products'] = array();
+LINE: 35
+CODE: $special = $this->currency->format
+LINE: 64
+CODE: $special = false;
+LINE: 69
+CODE: 'special'     => $special,
+LINE: 126
+CODE: if ($result['image']) {
+LINE: 59
+CODE: $data['text_
+LINE: 11
+CODE: $data['products'] = array();
+LINE: 35
+CODE: $special = $this->currency->format
+LINE: 57
+CODE: $special = false;
+LINE: 62
+CODE: 'special'     => $special,
+LINE: 119
+CODE: if ($result['image']) {
+LINE: 52
+CODE: $data['text_
+LINE: 11
+CODE: $data['products'] = array();
+LINE: 32
+CODE: $special = $this->currency->format
+LINE: 61
+CODE: $special = false;
+LINE: 66
+CODE: 'special'     => $special,
+LINE: 123
+CODE: $products = array_slice($setting['product'], 0, (int)$setting['limit']);
+LINE: 44
+CODE: $product_info = $this->model_catalog_product->getProduct($product_id);
+LINE: 58
+CODE: $data['heading_title'] = $manufacturer_info['name'];
+LINE: 146
+CODE: $data['products'] = array();
+LINE: 181
+CODE: $special = $this->currency->format
+LINE: 212
+CODE: $special = false;
+LINE: 217
+CODE: 'special'     => $special,
+LINE: 274
+CODE: if ($result['image']) {
+LINE: 207
+CODE: $_['text_
+LINE: 6
+CODE: $_['text_
+LINE: 9
+CODE: $_['text_
+LINE: 6
+CODE: $_['text_
+LINE: 10
+CODE: $_['text_
+LINE: 9
+CODE: $_['text_
+LINE: 10
+CODE: $_['text_
+LINE: 10
+CODE: $_['text_
+LINE: 10
+CODE: $_['text_
+LINE: 10
+CODE: $_['text_
+LINE: 14
+CODE: $_['text_
+LINE: 17
+CODE: $_['text_
+LINE: 14
+CODE: $_['text_
+LINE: 18
+CODE: $_['text_
+LINE: 17
+CODE: $_['text_
+LINE: 17
+CODE: $_['text_
+LINE: 17
+CODE: $_['text_
+LINE: 17
+CODE: $_['text_
+LINE: 17
+CODE: $_['text_
+LINE: 6
+CODE: $_['text_
+LINE: 9
+CODE: $_['text_
+LINE: 6
+CODE: $_['text_
+LINE: 10
+CODE: $_['text_
+LINE: 9
+CODE: $_['text_
+LINE: 10
+CODE: $_['text_
+LINE: 10
+CODE: $_['text_
+LINE: 10
+CODE: $_['text_
+LINE: 10
+FILE: admin/view/template/setting/setting.tpl
+CODE: <legend><?php echo $text_product; ?></legend>
+LINE: 394
+CODE: <?php echo $footer; ?>
+LINE: 1580
+FILE: admin/controller/setting/setting.php
+CODE: if (isset($this->request->post['config_name'])) {
+LINE: 464
+CODE: if (isset($this->error['name'])) {
+LINE: 237
+CODE: if (!$this->user->hasPermission('modify', 'setting/setting')) {
+LINE: 1161
+CODE: $data['entry_status']
+LINE: 153
+CODE: $data['help_compression'] = $this->language->get('help_compression');
+LINE: 221
+FILE: admin/language/en-gb/setting/setting.php
+CODE: $_['entry_status']
+LINE: 130
+CODE: $_['help_compression']
+LINE: 198
+CODE: $_['entry_error_
+LINE: 124
+----------------------------------------------------------------
+MOD: TemplateMonster Lazy load
+CODE: 'thumb'       => $image,
+LINE: 135
+CODE: 'thumb'       => $image,
+LINE: 126
+CODE: 'thumb'       => $image,
+LINE: 133
+CODE: 'thumb'       => $image,
+LINE: 133
+CODE: 'thumb'       => $image,
+LINE: 295
+CODE: 'thumb'       => $image,
+LINE: 281
+CODE: 'thumb'       => $image,
+LINE: 512
+CODE: 'thumb'       => $image,
+LINE: 319
+CODE: 'thumb'       => $image,
+LINE: 204
+----------------------------------------------------------------
+MOD: TemplateMonster NewsLetter
+FILE: admin/controller/marketing/contact.php
+CODE: $this->load->model('sale/order');
+LINE: 110
+CODE: $results = $this->model_customer_customer->getCustomers($customer_data);
+LINE: 138
+LINE: 158
+LINE: 179
+FILE: catalog/controller/account/register.php
+CODE: $this->load->model('account/customer');
+LINE: 20
+CODE: $this->customer->login($this->request->post['email'], $this->request->post['password']);
+LINE: 31
+----------------------------------------------------------------
+MOD: TemplateMonster Product
+FILE: system/library/document.php
+CODE: private $scripts = array();
+LINE: 21
+FILE: catalog/controller/common/header.php
+CODE: $data['scripts'] = $this->document->getScripts();
+LINE: 36
+CODE: $data['description'] = html_entity_decode($product_info['description'], ENT_QUOTES, 'UTF-8');
+LINE: 281
+CODE: $data['popup'] = $this->model_tool_image->resize
+LINE: 317
+CODE: $data['tab_attribute'] = $this->language->get('tab_attribute');
+LINE: 275
+CODE: $data['points'] = $product_info['points'];
+LINE: 286
+CODE: $data['images'] = array();
+LINE: 350
+CODE: 'thumb' => $this->model_tool_image->resize($result['image'], $this->config->get($this->config->get('config_theme') . '_image_additional_width'), $this->config->get($this->config->get('config_theme') . '_image_additional_height'))
+LINE: 357
+CODE: $data['breadcrumbs'] = array();
+LINE: 10
+CODE: $this->document->addScript('catalog/view/javascript/jquery/magnific/jquery.magnific-popup.min.js');
+LINE: 223
+CODE: $this->document->addStyle('catalog/view/javascript/jquery/magnific/magnific-popup.css');
+LINE: 224
+CODE: $this->document->addScript('catalog/view/javascript/jquery/datetimepicker/moment.js');
+LINE: 225
+CODE: $this->document->addScript('catalog/view/javascript/jquery/datetimepicker/bootstrap-datetimepicker.min.js');
+LINE: 226
+CODE: $this->document->addStyle('catalog/view/javascript/jquery/datetimepicker/bootstrap-datetimepicker.min.css');
+LINE: 227
+CODE: $_['tab_review']
+LINE: 55
+CODE: $_['tab_review']
+LINE: 65
+CODE: $_['tab_review']
+LINE: 56
+----------------------------------------------------------------
+MOD: TemplateMonster QuickView
+CODE: public function index($setting) {
+LINE: 5
+CODE: return $this->load->view('module/
+LINE: 157
+CODE: $data['button_cart'] = $this->language->get('button_cart');
+LINE: 21
+CODE: public function index($setting) {
+LINE: 5
+CODE: return $this->load->view('module/
+LINE: 150
+CODE: $data['button_cart'] = $this->language->get('button_cart');
+LINE: 21
+CODE: public function index($setting) {
+LINE: 5
+CODE: return $this->load->view('module/
+LINE: 157
+CODE: $data['button_cart'] = $this->language->get('button_cart');
+LINE: 21
+CODE: public function index($setting) {
+LINE: 5
+CODE: return $this->load->view('module/
+LINE: 163
+CODE: $data['button_cart'] = $this->language->get('button_cart');
+LINE: 21
+CODE: $data['products'][] = array(
+LINE: 146
+CODE: 'rating'      => $rating,
+LINE: 168
+CODE: $data['products'][] = array(
+LINE: 139
+CODE: 'rating'      => $rating,
+LINE: 161
+CODE: $data['products'][] = array(
+LINE: 146
+CODE: 'rating'      => $rating,
+LINE: 168
+CODE: $data['products'][] = array(
+LINE: 148
+CODE: 'rating'      => $rating,
+LINE: 170
+CODE: $data['button_cart'] = $this->language->get('button_cart');
+LINE: 117
+CODE: $data['button_cart'] = $this->language->get('button_cart');
+LINE: 162
+CODE: $data['button_cart'] = $this->language->get('button_cart');
+LINE: 157
+CODE: $data['button_cart'] = $this->language->get('button_cart');
+LINE: 85
+CODE: $data['button_cart'] = $this->language->get('button_cart');
+LINE: 263
+CODE: $data['products'][] = array(
+LINE: 303
+CODE: 'rating'      => $result['rating'],
+LINE: 326
+CODE: $data['products'][] = array(
+LINE: 289
+CODE: 'rating'      => $result['rating'],
+LINE: 312
+CODE: $data['products'][] = array(
+LINE: 327
+CODE: 'rating'      => $result['rating'],
+LINE: 350
+CODE: $data['products'][] = array(
+LINE: 212
+CODE: 'rating'      => $result['rating'],
+LINE: 235
+CODE: $data['products'][] = array(
+LINE: 571
+CODE: 'rating'      => $rating,
+LINE: 594
+CODE: $_['heading_title']
+LINE: 7
+CODE: $_['heading_title']
+LINE: 7
+CODE: $_['heading_title']
+LINE: 7
+CODE: $_['heading_title']
+LINE: 7
+CODE: $_['text_
+LINE: 5
+CODE: $_['text_
+LINE: 8
+CODE: $_['text_
+LINE: 9
+CODE: $_['text_
+LINE: 8
+CODE: $_['text_
+LINE: 5
+CODE: $_['text_tax']
+LINE: 18
+CODE: $_['text_tax']
+LINE: 18
+CODE: $_['text_tax']
+LINE: 18
+CODE: $_['text_tax']
+LINE: 18
+CODE: $_['text_
+LINE: 5
+CODE: $_['text_
+LINE: 8
+CODE: $_['text_
+LINE: 9
+CODE: $_['text_
+LINE: 8
+CODE: $_['text_
+LINE: 5
+CODE: $_['text_tax']
+LINE: 25
+CODE: $_['text_tax']
+LINE: 25
+CODE: $_['text_tax']
+LINE: 25
+CODE: $_['text_tax']
+LINE: 25
+CODE: $_['text_
+LINE: 13
+CODE: $_['text_
+LINE: 16
+CODE: $_['text_
+LINE: 17
+CODE: $_['text_
+LINE: 16
+CODE: $_['text_
+LINE: 13
+----------------------------------------------------------------
+MOD: TemplateMonster Simple Blog Admin
+CODE: $data['text_openbay_order_import']
+LINE: 119
+CODE: $data['openbay_link_amazonus_links']
+LINE: 224
+CODE: $data['entry_status'] = $this->language->get('entry_status');
+LINE: 162
+CODE: $data['text_error'] = $this->language->get('text_error');
+LINE: 57
+CODE: $data['help_compression'] = $this->language->get('help_compression');
+LINE: 238
+CODE: $data['header'] = $this->load->controller('common/header');
+LINE: 1223
+CODE: <li id="reports">
+LINE: 180
+CODE: <li><a href="#tab-server" data-toggle="tab"><?php echo $tab_server; ?></a></li>
+LINE: 43
+CODE: </form>
+LINE: 1604
+CODE: $_['text_paypal_search']
+LINE: 109
+CODE: $_['text_paypal_search']
+LINE: 62
+LINE: 126
+CODE: $_['text_paypal_search']
+LINE: 54
+LINE: 119
+CODE: $_['text_error']                      = 'Error Handling';
+LINE: 32
+CODE: $_['entry_status']                    = 'Status';
+LINE: 151
+----------------------------------------------------------------
+MOD: TemplateMonster Theme Path
+CODE: $this->load->language('common/
+LINE: 51
+CODE: $this->load->language('common/
+LINE: 6
+----------------------------------------------------------------
+MOD: TM Footer
+CODE: $data['text_newsletter'] = $this->language->get('text_newsletter');
+LINE: 33
+CODE: $data['newsletter'] = $this->url->link('account/newsletter', '', true);
+LINE: 64
+CODE: $data['contact'] = $this->url->link('information/contact');
+LINE: 62
+CODE: $data['powered'] = sprintf($this->language->get('text_powered'), $this->config->get('config_name'), date('Y', time()));
+NOT FOUND!
+CODE: $data['newsletter'] = $this->url->link('account/newsletter', '', true);
+LINE: 75
+CODE: $_['text_information']
+LINE: 3
+CODE: 'Powered By <a href="http://www.opencart.com">OpenCart</a><br /> %s &copy; %s'
+LINE: 17
+CODE: $_['text_information']
+LINE: 11
+CODE: 'Powered By <a href="http://www.opencart.com" target="_blank" title="OpenCart">OpenCart</a>  %s &copy; %s</span>'
+NOT FOUND!
+CODE: $_['text_information']
+LINE: 3
+CODE: 'Работает на <a href="http://opencart-russia.ru">OpenCart</a><br /> %s &copy; %s'
+NOT FOUND!
+----------------------------------------------------------------
+MOD: TM Header
+CODE: $data['name'] = $this->config->get('config_name');
+LINE: 43
+CODE: $data['text_all'] = $this->language->get('text_all');
+LINE: 99
+CODE: $data['telephone'] = $this->config->get('config_telephone');
+LINE: 129
+CODE: $this->load->language('common/header');
+LINE: 64
+CODE: $data['cart'] = $this->load->controller('common/cart');
+LINE: 189
+FILE: catalog/language/en-gb/common/header.php
+CODE: $_['text_checkout']      = 'Checkout';
+LINE: 31
+CODE: 'Wish List (%s)'
+LINE: 3
+FILE: catalog/language/de-DE/common/header.php
+CODE: $_['text_checkout']   = 'Kasse';
+NOT FOUND!
+FILE: catalog/language/ru-ru/common/header.php
+CODE: $_['text_checkout']      = 'Оформление заказа';
+LINE: 16
+CODE: 'Закладки (%s)'
+LINE: 3
+FILE: catalog/language/en-gb/account/wishlist.php
+CODE: 'Wish List (%s)'
+LINE: 7
+FILE: catalog/language/de-DE/account/wishlist.php
+CODE: 'Wunschliste (%s)'
+LINE: 15
+FILE: catalog/language/ru-ru/account/wishlist.php
+CODE: 'Закладки (%s)'
+LINE: 7
+----------------------------------------------------------------
+MOD: TM Header Cart
+FILE: catalog/controller/common/cart.php
+CODE: $data['text_loading'] = $this->language->get('text_loading');
+LINE: 58
+FILE: catalog/controller/checkout/cart.php
+CODE: $json['total'] = sprintf($this->language->get('text_items'), $this->cart->countProducts() + (isset($this->session->data['vouchers']) ? count($this->session->data['vouchers']) : 0), $this->currency->format($total, $this->session->data['currency']));
+LINE: 400
+LINE: 500
+FILE: catalog/language/en-gb/common/cart.php
+CODE: $_['text_items']
+LINE: 6
+FILE: catalog/language/en-gb/checkout/cart.php
+CODE: $_['text_items']
+LINE: 12
+FILE: catalog/language/de-DE/common/cart.php
+CODE: $_['text_recurring']
+LINE: 17
+FILE: catalog/language/de-DE/checkout/cart.php
+CODE: $_['text_recurring']
+LINE: 30
+FILE: catalog/language/ru-ru/common/cart.php
+CODE: $_['text_recurring']
+LINE: 9
+FILE: catalog/language/ru-ru/checkout/cart.php
+CODE: $_['text_recurring']
+LINE: 22
+----------------------------------------------------------------
+MOD: TM Live search
+CODE: class ControllerProductSearch extends Controller {
+LINE: 52
+----------------------------------------------------------------
+MOD: TM Pages Lang
+FILE: catalog/language/en-gb/information/sitemap.php
+CODE: $_['text_contact']     = 'Contact Us';
+LINE: 20
+FILE: catalog/controller/information/sitemap.php
+CODE: $data['text_contact'] = $this->language->get('text_contact');
+LINE: 36
+FILE: catalog/controller/product/compare.php
+CODE: $json['success'] = sprintf($this->language->get('text_success'), $this->url->link('product/product', 'product_id=' . $this->request->post['product_id']), $product_info['name'], $this->url->link('product/compare'));
+LINE: 186
+CODE: $this->session->data['compare'][] = $this->request->post['product_id'];
+LINE: 188
+CODE: array_shift($this->session->data['compare']);
+LINE: 183
+CODE: $json['total'] = sprintf($this->language->get('text_compare'), (isset($this->session->data['compare']) ? count($this->session->data['compare']) : 0));
+LINE: 195
+FILE: catalog/language/en-gb/product/compare.php
+CODE: $_['text_reviews']      = 'Based on %s reviews.';
+LINE: 14
+CODE: $_['text_summary']      = 'Summary';
+LINE: 21
+FILE: catalog/language/ru-ru/product/compare.php
+CODE: $_['text_reviews']      = 'Всего отзывов: %s';
+LINE: 14
+CODE: $_['text_summary']      = 'Краткое описание';
+LINE: 21
+FILE: catalog/language/de-DE/product/compare.php
+CODE: $_['text_summary']    = 'Zusammenfassung';
+NOT FOUND!
+FILE: system/library/pagination.php
+CODE: public $num_links = 8;
+LINE: 5
+----------------------------------------------------------------
+MOD: TM Parallax 
+FILE: catalog/model/extension/module.php
+CODE: public function getModule($module_id) {
+LINE: 12
+----------------------------------------------------------------
+MOD: TM Positions on Home page
+FILE: catalog/controller/common/home.php
+CODE: $data['content_top'] = $this->load->controller('common/content_top');
+LINE: 17
+FILE: admin/view/template/design/layout_form.tpl
+CODE: <?php if ($layout_module['position'] == 'content_top') { ?>
+LINE: 129
+CODE: html += '    <option value="content_top"><?php echo $text_content_top; ?></option>';
+LINE: 211
+FILE: admin/controller/design/layout.php
+CODE: $data['text_content_top'] = $this->language->get('text_content_top');
+LINE: 271
+FILE: admin/language/en-gb/design/layout.php
+CODE: $_['text_content_top']    = 'Content Top';
+LINE: 16
+CODE: $data['text_information'] = $this->language->get('text_information');
+LINE: 13
+CODE: $data['newsletter'] = $this->url->link('account/newsletter', '', true);
+LINE: 78
+CODE: $data['base'] = $server;
+LINE: 31
+----------------------------------------------------------------
+MOD: TM Stickers
+CODE: $data['heading_title']
+LINE: 11
+CODE: $data['products'] = array();
+LINE: 53
+CODE: 'tax'         => $tax,
+LINE: 184
+CODE: $_['text_tax']      = 'Ex Tax:';
+LINE: 22
+CODE: $_['text_tax']
+LINE: 24
+CODE: $_['text_tax']
+LINE: 22
+CODE: $data['button_continue']
+LINE: 131
+LINE: 534
+CODE: $data['products'] = array();
+LINE: 217
+CODE: 'tax'         => $tax,
+LINE: 339
+CODE: $_['text_limit']
+LINE: 38
+CODE: $_['text_limit']
+LINE: 47
+CODE: $_['text_limit']
+LINE: 39
+CODE: $data['button_cart']
+LINE: 87
+CODE: $data['products'] = array();
+LINE: 128
+CODE: 'tax'         => $tax,
+LINE: 248
+CODE: $_['text_limit']
+LINE: 38
+CODE: $_['text_limit']
+LINE: 47
+CODE: $_['text_limit']
+LINE: 39
+CODE: $data['button_cart']
+LINE: 210
+CODE: $data['products'] = array();
+LINE: 288
+CODE: 'tax'         => $tax,
+LINE: 414
+CODE: $_['text_limit']
+LINE: 44
+CODE: $_['text_limit']
+LINE: 53
+CODE: $_['text_limit']
+LINE: 45
+CODE: $data['button_cart']
+LINE: 164
+CODE: $data['products'] = array();
+LINE: 204
+CODE: 'tax'         => $tax,
+LINE: 325
+CODE: $_['text_limit']
+LINE: 41
+CODE: $_['text_limit']
+LINE: 50
+CODE: $_['text_limit']
+LINE: 42
+CODE: $data['heading_title']
+LINE: 11
+CODE: $data['products'] = array();
+LINE: 61
+CODE: 'tax'         => $tax,
+LINE: 182
+CODE: $_['text_tax']      = 'Ex Tax:';
+LINE: 22
+CODE: $_['text_tax']
+LINE: 24
+CODE: $_['text_tax']
+LINE: 22
+CODE: $data['heading_title']
+LINE: 11
+CODE: $data['products'] = array();
+LINE: 61
+CODE: 'tax'         => $tax,
+LINE: 175
+CODE: $_['text_tax']      = 'Ex Tax:';
+LINE: 22
+CODE: $_['text_tax']
+LINE: 24
+CODE: $_['text_tax']
+LINE: 22
+CODE: $data['heading_title']
+LINE: 11
+CODE: $data['products'] = array();
+LINE: 61
+CODE: 'tax'         => $tax,
+LINE: 182
+CODE: $_['text_tax']      = 'Ex Tax:';
+LINE: 22
+CODE: $_['text_tax']
+LINE: 24
+CODE: $_['text_tax']
+LINE: 22
+----------------------------------------------------------------
+MOD: TM Top Menu All Levels
+CODE: $data['language'] = $this->load->controller('common/language');
+LINE: 189
+----------------------------------------------------------------
